@@ -13,7 +13,16 @@ a{
 }
 button{
   background-color: none;
+  cursor: pointer;
 }
 button:focus{
   outline: none;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #1D1D1D;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
 }
