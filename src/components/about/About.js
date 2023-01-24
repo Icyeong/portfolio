@@ -1,10 +1,13 @@
 import styled from 'styled-components';
-import { MainWrapper } from '../styles';
+import { MainWrapper } from '../../styles';
+import InfoTab from './InfoTab';
+import Introduction from './Introduction';
 
 const About = () => {
    return (
       <AboutWarpper>
-         <h1>About입니다.</h1>
+         <Introduction />
+         <InfoTab />
       </AboutWarpper>
    );
 };
