@@ -12,7 +12,8 @@ a{
   color: black;
 }
 button{
-  background-color: none;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
 button:focus{

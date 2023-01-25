@@ -1,10 +1,13 @@
 import styled from 'styled-components';
-import { MainWrapper } from '../styles';
+import { MainWrapper } from '../../styles';
+import DisplayBoard from './DisplayBoard';
+import ProjectNav from './ProjectsNav';
 
 const Work = () => {
    return (
       <WorkWarpper>
-         <h1>Work입니다.</h1>
+         <DisplayBoard />
+         <ProjectNav />
       </WorkWarpper>
    );
 };
