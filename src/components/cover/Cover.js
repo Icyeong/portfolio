@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MainWrapper } from '../styles';
+import { MainWrapper } from '../../styles';
 import CoverBg from './CoverBg';
 
 const Cover = () => {

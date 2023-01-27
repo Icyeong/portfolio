@@ -1,11 +1,22 @@
-import Work from '../components/work/Work';
+import styled from 'styled-components';
+import DisplayBoard from '../components/work/DisplayBoard';
+import ProjectNav from '../components/work/ProjectsNav';
+import { MainWrapper } from '../styles';
 
-const Work_page = () => {
+const Work = () => {
    return (
-      <>
-         <Work />
-      </>
+      <WorkWarpper>
+         <DisplayBoard />
+         <ProjectNav />
+      </WorkWarpper>
    );
 };
 
-export default Work_page;
+const WorkWarpper = styled(MainWrapper)`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+`;
+
+export default Work;

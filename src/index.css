@@ -16,7 +16,10 @@ button{
   border: none;
   cursor: pointer;
 }
-button:focus{
+input{
+  border: none;
+}
+input:focus, textarea:focus ,button:focus{
   outline: none;
 }
 body::-webkit-scrollbar {
