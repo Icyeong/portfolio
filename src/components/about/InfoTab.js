@@ -124,7 +124,7 @@ const TabContainer = styled.ul`
       ul {
          width: 100%;
          border-left: 1px solid #6f6f6f;
-         padding-bottom: 40px;
+         padding-bottom: 80px;
          li {
             display: flex;
             justify-content: flex-start;
@@ -141,23 +141,36 @@ const TabContainer = styled.ul`
             left: -7px;
          }
          .period {
+            width: 23%;
             font-size: 1rem;
             letter-spacing: 1px;
             color: #d6d6d6;
             margin: 0 30px;
          }
          .title {
-            font-size: 1.25rem;
+            font-size: 1.3rem;
             font-weight: 700;
             letter-spacing: 0.5px;
+            margin-bottom: 10px;
+         }
+         .smallTitle {
+            font-size: 1rem;
             margin-bottom: 15px;
+            color: #d8d8d8;
          }
          .detail {
             color: #b6b6b6;
             p {
-               font-size: 0.95rem;
+               font-size: 1rem;
                padding: 2px 5px;
+               word-break: keep-all;
             }
+         }
+         a {
+            color: #b6b6b6;
+            margin-top: 15px;
+            display: block;
+            font-weight: 700;
          }
       }
    }
