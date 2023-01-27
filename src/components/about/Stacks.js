@@ -1,11 +1,13 @@
-import { stack_dummyData } from '../../dummyData/stack';
+import { useRecoilValue } from 'recoil';
+import { stacks } from '../../atoms';
 import CreateStack from './CreateStack';
 
 const Stacks = () => {
+   const my_stacks = useRecoilValue(stacks);
    return (
       <li className="stack-container">
          <div className="grid">
-            {stack_dummyData.map((data, idx) => (
+            {my_stacks.map((data, idx) => (
                <CreateStack data={data} key={idx} />
             ))}
          </div>
