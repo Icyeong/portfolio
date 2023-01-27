@@ -1,11 +1,22 @@
-import About from '../components/about/About';
+import styled from 'styled-components';
+import { MainWrapper } from '../styles';
+import Introduction from '../components/about/Introduction';
+import InfoTab from '../components/about/InfoTab';
 
-const About_page = () => {
+const About = () => {
    return (
-      <>
-         <About />
-      </>
+      <AboutWarpper>
+         <Introduction />
+         <InfoTab />
+      </AboutWarpper>
    );
 };
 
-export default About_page;
+const AboutWarpper = styled(MainWrapper)`
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+`;
+
+export default About;

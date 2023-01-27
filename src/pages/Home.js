@@ -1,7 +1,7 @@
-import About from '../components/about/About';
-import Contact from '../components/Contact';
-import Cover from '../components/Cover';
-import Work from '../components/work/Work';
+import Cover from '../components/cover/Cover';
+import About from './About';
+import Contact from './Contact';
+import Work from './Work';
 
 const Home_page = () => {
    return (
