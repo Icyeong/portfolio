@@ -1,14 +1,16 @@
+import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
-import { projects_dummyData } from '../../dummyData/prejects';
+import { projects } from '../../atoms';
 import CreateNav from './CreateNav';
 
 const ProjectNav = () => {
+   const project_data = useRecoilValue(projects);
    return (
       <Wrapper>
          <div className="temp"></div>
          <nav>
             <div className="inner-container">
-               {projects_dummyData.map((data, idx) => (
+               {project_data.map((data, idx) => (
                   <CreateNav data={data} key={idx} />
                ))}
             </div>

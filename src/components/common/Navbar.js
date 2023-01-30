@@ -56,13 +56,17 @@ const NavWrapper = styled.div`
       &last-child {
          border-bottom: 1px solid #1d1d1d;
       }
-      color: white;
+      color: #969696;
       font-size: 15px;
       font-weight: 600;
       text-align: center;
+      border-left: 2px solid transparent;
+      transition: 0.3s;
    }
    a.active {
       border-left: 2px solid #b8e829;
+      color: white;
+      padding-left: 18px;
    }
 `;
 
