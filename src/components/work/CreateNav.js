@@ -8,7 +8,7 @@ const CreateNav = ({ data }) => {
    return (
       <Nav onClick={() => setProjectId(data.id)} className={projectId === data.id && 'active'}>
          <div>{data.id.toString().padStart(2, '0')}</div>
-         <p>{data.title}</p>
+         <p>{data.navTitle}</p>
       </Nav>
    );
 };

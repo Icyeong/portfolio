@@ -16,11 +16,13 @@ const DisplayBoard = () => {
             <div className="inner-container">
                <div className="title">
                   {project.title}
-                  <span>{project.period}</span>
+                  <span>{project.subTitle}</span>
                </div>
+
                <p className="project-brief">{project.brief}</p>
 
                <ul className="content">
+                  작업 사항
                   {project.content.map((data, idx) => (
                      <li key={idx}>{data}</li>
                   ))}
@@ -30,9 +32,21 @@ const DisplayBoard = () => {
                      <li key={idx}>{data}</li>
                   ))}
                </ul>
-               <a className="github" href={project.githubLink}>
-                  <img src={Github} alt="깃헙 링크" />
-               </a>
+               <div className="linkBtns">
+                  <a className="github" href={project.githubLink} target="_blank" rel="noreferrer">
+                     <img src={Github} alt="깃헙 링크" /> 깃허브
+                  </a>
+                  {project.deployLink && (
+                     <a href={project.deployLink} target="_blank" rel="noreferrer">
+                        배포 사이트
+                     </a>
+                  )}
+                  {project.figma && (
+                     <a href={project.figma} target="_blank" rel="noreferrer">
+                        Figma
+                     </a>
+                  )}
+               </div>
             </div>
          </section>
       </Wrapper>
@@ -49,11 +63,17 @@ const Wrapper = styled.div`
       width: 90%;
       height: 85vh;
       background-color: #2b2c2a;
-      padding: 50px;
+      padding: 50px 70px;
       border-radius: 25px;
       box-shadow: inset 0px 0px 20px #000000;
       display: flex;
       flex-direction: column;
+      &:hover .imgBox > img {
+         transform: scale(1.01);
+      }
+      &:hover .imgBox::after {
+         background: rgba(0, 0, 0, 0.1);
+      }
    }
    .imgBox {
       width: 100%;
@@ -61,6 +81,24 @@ const Wrapper = styled.div`
       background-color: lightgray;
       border-radius: 10px;
       margin-bottom: 45px;
+      overflow: hidden;
+      position: relative;
+      img {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         transition: 0.3s;
+      }
+      &::after {
+         width: 100%;
+         height: 100%;
+         content: '';
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: rgba(0, 0, 0, 0.4);
+         transition: 0.3s;
+      }
    }
    .inner-container {
       flex: 1;
@@ -75,42 +113,78 @@ const Wrapper = styled.div`
       border-radius: 30px;
    }
    .title {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
       font-weight: 700;
       margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      color: #b8e829;
       span {
-         font-size: 1rem;
-         margin-left: 30px;
+         font-size: 1.2rem;
+         margin-top: 5px;
+         font-weight: 600;
+         color: white;
       }
    }
    p {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
+      font-weight: 400;
       margin-bottom: 50px;
+      margin-top: 30px;
+      color: #d5d5d5;
    }
    .content {
-      padding-left: 25px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
+      font-size: 1.2rem;
+      font-weight: 600;
       li {
-         font-size: 1rem;
+         margin-left: 28px;
+         font-size: 1.05rem;
+         font-weight: 400;
          list-style: disc;
-         padding: 6px 10px;
+         padding: 6px 5px;
+         color: #d5d5d5;
       }
    }
    .stacks {
       display: flex;
+      margin-bottom: 20px;
       li {
-         font-size: 15px;
+         font-size: 1.1rem;
+         font-weight: 700;
          padding: 0 10px;
          border-right: 1px solid white;
-
+         color: #b6b6b6;
+         cursor: default;
          &:last-child {
             border-right: none;
          }
       }
    }
+   .linkBtns {
+      display: flex;
+   }
    a {
-      display: block;
+      font-size: 0.9rem;
+      width: 100px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1d1d1d;
+      color: white;
+      border-radius: 2px;
+      margin-right: 10px;
       margin-top: 40px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      transition: 0.2s;
+      img {
+         margin-right: 5px;
+      }
+      &:hover {
+         color: #b8e829;
+         transform: translateY(-3px);
+      }
    }
 `;
 
