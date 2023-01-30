@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Cat from '../aniball/Cat';
+import Egg from '../aniball/Egg';
 import Pig from '../aniball/Pig';
+import Shark from '../aniball/Shark';
 
 const Collection = () => {
    return (
@@ -19,12 +21,12 @@ const Collection = () => {
             </li>
             <li>
                <div>
-                  <Cat />
+                  <Shark />
                </div>
             </li>
             <li>
                <div>
-                  <Pig />
+                  <Egg />
                </div>
             </li>
          </ul>
