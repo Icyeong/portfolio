@@ -5,6 +5,8 @@ import todo from '../assets/image/work/todo.png';
 import timtam from '../assets/image/work/timtam.png';
 import lotte from '../assets/image/work/lotte.png';
 import kungfu from '../assets/image/work/kungfu.png';
+import tarot from '../assets/image/work/tarot.png';
+import miero from '../assets/image/work/miero.png';
 
 export const projects_dummyData = [
    {
@@ -100,5 +102,31 @@ export const projects_dummyData = [
       githubLink: 'https://github.com/Icyeong/kungfu_panda.git',
       deployLink: 'https://icyeong.github.io/kungfu_panda',
       figma: 'https://www.figma.com/file/OshAhvvJMbITZSQrtdJ5K5/%EC%BF%B9%ED%91%B8%ED%8C%AC%EB%8D%94?node-id=0%3A1&t=DgMakxF7hJOPXmdw-1'
+   },
+   {
+      id: 8,
+      title: 'Ms.fortune',
+      subTitle: '개인 프로젝트 (2021년도 제작)',
+      navTitle: 'Ms.fortune (퍼블리싱)',
+      period: '',
+      imgUrl: tarot,
+      brief: '타로카드를 이용한 간단한 타로점을 봐주는 웹앱을 제작',
+      content: ['퍼블리싱 100%'],
+      stacks: ['HTML5', 'CSS3', 'jQuery'],
+      githubLink: 'https://github.com/Icyeong/Ms.fortune',
+      deployLink: 'https://icyeong.github.io/Ms.fortune'
+   },
+   {
+      id: 9,
+      title: '미에로화이바 클론',
+      subTitle: '개인 프로젝트 (2021년도 제작)',
+      navTitle: '미에로화이바 클론 (퍼블리싱)',
+      period: '',
+      imgUrl: miero,
+      brief: '미에로 화이바 웹사이트 클론',
+      content: ['퍼블리싱 100% (반응형)'],
+      stacks: ['HTML5', 'CSS3', 'jQuery'],
+      githubLink: 'https://github.com/Icyeong/miero.git',
+      deployLink: 'https://icyeong.github.io/miero'
    }
 ];

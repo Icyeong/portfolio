@@ -72,7 +72,9 @@ const Wrapper = styled.div`
       textarea {
          padding: 20px;
          width: 100%;
+         max-width: 100%;
          height: 250px;
+         max-height: 250px;
          transition: 0.3s;
          &.focus {
             border-left: 10px solid red;
@@ -92,8 +94,8 @@ const Wrapper = styled.div`
          font-size: 1.3rem;
          font-weight: 700;
          letter-spacing: 1px;
-         margin-top: 80px;
-         margin-bottom: 150px;
+         margin-top: 10vh;
+         margin-bottom: 5vh;
          &:hover {
             background-color: #1d1d1d;
          }

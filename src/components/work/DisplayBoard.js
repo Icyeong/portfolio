@@ -59,6 +59,7 @@ const Wrapper = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
+   word-break: keep-all;
    section {
       width: 90%;
       height: 85vh;
@@ -68,6 +69,7 @@ const Wrapper = styled.div`
       box-shadow: inset 0px 0px 20px #000000;
       display: flex;
       flex-direction: column;
+      overflow-x: hidden;
       &:hover .imgBox > img {
          transform: scale(1.01);
       }
@@ -77,14 +79,18 @@ const Wrapper = styled.div`
    }
    .imgBox {
       width: 100%;
-      height: 200px;
+      height: 180px;
       background-color: lightgray;
       border-radius: 10px;
       margin-bottom: 45px;
       overflow: hidden;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 45px auto;
       img {
-         width: 100%;
+         height: 100%;
          display: flex;
          align-items: center;
          transition: 0.3s;

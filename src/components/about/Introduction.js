@@ -9,21 +9,22 @@ const Introduction = () => {
             <div className="greeting">Hello,</div>
             <h4>프론트엔드 개발자 임채영입니다.</h4>
             <p>
-               대학생활에 다양한 프로젝트와 인턴십과정에서 다양한 <span>프로젝트</span>를 진행하였고, 이를 통해 웹 개발
-               업무 프로세스에 전반적인 이해력을 습득하였습니다.
+               <span>구일신 일일신 우일신</span> 나날이 새롭게 하고, 또 날로 새롭게 하라. 어제보다는 더 성장한 개발자로,
+               내일은 오늘보다 더 좋은 코드를 짤 수 있도록 항상 진보하는 개발자가 되고자 합니다.
             </p>
             <p>
-               개발하면서 제가 느낀 좋은 <span>IT 서비스</span>는 사용자의 입장에서 쓰기편한 서비스라 생각하고, 늘
-               사용자의 관점을 고안하며 개발하고 있습니다.
+               더 나은 UI, UX가 무엇인지 고민해보고 개선하는 것을 좋아하며, <span>매력적인 웹사이트</span> 개발에 관심이
+               많습니다.
             </p>
             <p>
-               대학생활에 다양한 프로젝트와 인턴십과정에서 다양한 <span>프로젝트</span>를 진행하였고, 이를 통해 웹 개발
-               업무 프로세스에 전반적인 이해력을 습득하였습니다.
+               아이디어로 새로운 시도를 해보고 응용하여 새로운 것을 제작하는 것을 좋아합니다. 또 애니메이션과 3D에도
+               관심이 많아 꾸준히 다른 사이트의 트렌디도 확인해보며 공부하고 있습니다.
             </p>
             <p>
-               개발하면서 제가 느낀 좋은<span>IT 서비스</span>는 사용자의 입장에서 쓰기편한 서비스라 생각하고, 늘
-               사용자의 관점을 고안하며 개발하고 있습니다.
+               기능과 심미적인 부분 모두 <span>조화를 이룰 수 있는</span> 웹을 제작하고, 팀원들과 조화롭게 어울릴 수
+               있는 팀원이 되고자 합니다.
             </p>
+            <p>읽어주셔서 감사합니다.</p>
             <ul className="link-items">
                <li>
                   <a href="https://github.com/Icyeong?tab=repositories" target="_blank" rel="noreferrer">
@@ -31,7 +32,7 @@ const Introduction = () => {
                   </a>
                </li>
                <li>
-                  <a href="https://github.com/Icyeong?tab=repositories" target="_blank" rel="noreferrer">
+                  <a href="https://www.instagram.com/icy_yeong" target="_blank" rel="noreferrer">
                      <img src={Instagram} alt="instagram" />
                   </a>
                </li>
@@ -110,10 +111,23 @@ const Wrapper = styled.section`
    .link-items {
       display: flex;
       li {
+         transition: 0.2s;
          margin-right: 15px;
          &:last-child {
-            transform: translateY(2px);
+            transform: translateY(1px);
          }
+         &:hover {
+            transform: translateY(-2px);
+         }
+      }
+   }
+
+   @media screen and (max-width: 1750px) {
+      margin: 0 3vw;
+   }
+   @media screen and (max-width: 1600px) {
+      .txt-container {
+         width: 35vw;
       }
    }
 `;
