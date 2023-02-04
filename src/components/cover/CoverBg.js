@@ -22,6 +22,7 @@ const Wrapper = styled.div`
    position: absolute;
    top: 0;
    left: 0;
+   user-select: none;
    .alphabet {
       font-size: 5vw;
       font-weight: 900;

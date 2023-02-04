@@ -27,6 +27,8 @@ const CoverWarpper = styled(MainWrapper)`
    align-items: center;
    color: white;
    margin-left: 0;
+   width: 100%;
+   user-select: none;
    .cover-txt {
       display: flex;
       flex-direction: column;

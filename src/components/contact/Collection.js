@@ -40,6 +40,7 @@ const Wrapper = styled.div`
    display: flex;
    flex-direction: column;
    align-items: center;
+   overflow: hidden;
    p {
       font-size: 1rem;
       font-weight: 700;

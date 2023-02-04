@@ -8,10 +8,10 @@ const InfoTab = () => {
    return (
       <Wrapper>
          <BtnWrapper>
-            <button onClick={() => setActiveBtn('stack')} className={activeBtn === 'stack' && 'active'}>
+            <button onClick={() => setActiveBtn('stack')} className={activeBtn === 'stack' ? 'active' : null}>
                Stack
             </button>
-            <button onClick={() => setActiveBtn('exp')} className={activeBtn === 'exp' && 'active'}>
+            <button onClick={() => setActiveBtn('exp')} className={activeBtn === 'exp' ? 'active' : null}>
                Experience
             </button>
          </BtnWrapper>
@@ -26,14 +26,17 @@ const Wrapper = styled.section`
    position: relative;
    overflow: hidden;
    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
    &::after {
       content: '';
-      width: 100%;
+      width: 150vh;
       height: 100vh;
       background-color: #2e2e2e;
       position: absolute;
       top: 55px;
-      left: 100px;
+      left: 5vw;
       transform: skewX(0.3deg) rotateZ(-7deg);
       box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.5);
    }
@@ -44,6 +47,9 @@ const BtnWrapper = styled.div`
    display: flex;
    margin: 55px 0 0 110px;
    transform: rotateZ(-7deg);
+   position: relative;
+   z-index: 1;
+   align-self: flex-start;
    button {
       margin-right: 50px;
       padding: 5px 10px;
@@ -73,12 +79,19 @@ const BtnWrapper = styled.div`
 `;
 
 const TabContainer = styled.ul`
-   width: 75%;
+   width: 80%;
    height: calc(100vh - 170px);
-   position: absolute;
-   top: 170px;
-   left: 190px;
    z-index: 1;
+   overflow-y: scroll;
+   margin: 10vh 0 0 100px;
+   &::-webkit-scrollbar {
+      width: 10px;
+      background: rgba(0, 0, 0, 0);
+   }
+   &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 30px;
+   }
    li {
       width: 100%;
       justify-content: center;
@@ -96,15 +109,34 @@ const TabContainer = styled.ul`
          font-size: 1rem;
          color: #c1c1c1;
          .imgBox {
-            width: 100px;
-            height: 100px;
-            border-radius: 5px;
+            width: 6.25rem;
+            height: 6.25rem;
             background-color: lightgray;
             margin-bottom: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+            border-radius: 15%;
+            &:hover {
+               transform: scale(0.98) translateY(3px);
+            }
+         }
+         img {
+            width: 100%;
          }
       }
-      @media screen and (max-width: 1750px) {
+      @media screen and (max-width: 1600px) {
          grid-template-columns: repeat(4, 1fr) !important;
+         .item .imgBox {
+            width: 5.8rem;
+            height: 5.8rem;
+         }
+      }
+      @media screen and (max-width: 1440px) {
+         grid-template-columns: repeat(3, 1fr) !important;
+         .item .imgBox {
+            width: 5.2rem;
+            height: 5.2rem;
+         }
       }
    }
    /* Experience */
