@@ -12,20 +12,22 @@ const Form = () => {
    const handleSubmit = e => {
       e.preventDefault();
 
+      const emailRegex = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
+
       setNameCheck(false);
       setEmailCheck(false);
       setMessageCheck(false);
 
-      if (name.trim() === '') {
+      if (name === '') {
          setNameCheck(true);
       }
-      if (email.trim() === '') {
+      if (!emailRegex.test(email)) {
          setEmailCheck(true);
       }
       if (message.trim() === '') {
          setMessageCheck(true);
       }
-      if (name.trim() === '' || email.trim() === '' || message.trim() === '') return;
+      if (name.trim() === '' || !emailRegex.test(email) || message.trim() === '') return;
 
       send('service_ad8dciv', 'template_akn5rff', { name, email, message }).then(
          res => {
@@ -53,15 +55,15 @@ const Form = () => {
                placeholder="Name"
                className={nameCheck ? 'focus' : 'unfocus'}
                value={name}
-               onChange={e => setName(e.target.value)}
+               onChange={e => setName(e.target.value.trim())}
             />
             <input
-               type="email"
+               type="text"
                name="email"
                placeholder="Email"
                className={emailCheck ? 'focus' : 'unfocus'}
                value={email}
-               onChange={e => setEmail(e.target.value)}
+               onChange={e => setEmail(e.target.value.trim())}
             />
          </div>
          <textarea
