@@ -3,7 +3,7 @@ import Form from './Form';
 
 const FormSection = () => {
    return (
-      <Wrapper>
+      <Wrapper data-aos="fade-right" data-aos-duration="700">
          <h1>Contact me!</h1>
          <p>
             궁금한 점이 있다면 아래의 폼을 통해,

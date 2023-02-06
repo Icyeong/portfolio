@@ -8,7 +8,7 @@ const DisplayBoard = () => {
    const project = useRecoilValue(projects).filter(project => project.id === selected_id)[0];
 
    return (
-      <Wrapper>
+      <Wrapper data-aos="fade-up" data-aos-duration="700">
          <section>
             <div className="imgBox">
                <img src={project.imgUrl} alt="" />
