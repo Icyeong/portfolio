@@ -12,14 +12,14 @@ export const projects_dummyData = [
    {
       id: 1,
       title: 'MOMO',
-      subTitle: '팀 프로젝트 (6인 / 진행중)',
+      subTitle: '팀 프로젝트 (6인 / 4주)',
       navTitle: 'MOMO (팀 프로젝트)',
       imgUrl: momo,
       brief: '모두 모임의 약자로 다양한 모임, 스터디, 멘토링 등을 주최하고, 관심 모임 참여를 할 수 있는 예약 웹어플리케이션',
       content: ['마이페이지/모임 목록 페이지/적립금 페이지/모달 구현', 'TossPayments API를 이용한 카드 결제 기능 구현'],
       stacks: ['Next.js', 'Recoil', 'JavaScript', 'Styled-components', 'Bootstrap5'],
-      githubLink: 'https://github.com/project-momo/momo-fe',
-      deployLink: 'https://www.momo-deploy.site'
+      githubLink: 'https://github.com/project-momo/momo-fe'
+      // deployLink: 'https://www.momo-deploy.site'
    },
    {
       id: 2,
