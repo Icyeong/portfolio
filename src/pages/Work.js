@@ -19,7 +19,7 @@ const WorkWarpper = styled(MainWrapper)`
    justify-content: center;
    align-items: center;
    color: white;
-   position: sticky;
+   /* position: sticky; */
    top: 0px;
    background-color: #1d1d1d;
 `;

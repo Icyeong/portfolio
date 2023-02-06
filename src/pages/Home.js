@@ -21,7 +21,7 @@ const Home_page = () => {
 
 const Gap = styled.div`
    width: 100%;
-   height: 300px;
+   height: 150px;
 `;
 
 export default Home_page;

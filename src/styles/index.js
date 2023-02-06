@@ -10,4 +10,6 @@ export const MainWrapper = styled.main`
    width: calc(100% - 130px);
    margin-left: 130px;
    min-height: 100vh;
+   max-height: 100vh;
+   overflow: hidden;
 `;

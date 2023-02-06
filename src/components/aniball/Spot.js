@@ -4,7 +4,7 @@ const Spotlight = () => {
    return (
       <Wrapper>
          <div className="spot"></div>
-         <div className="spotlight"></div>
+         <div className="spotlight" data-aos="fade-in" data-aos-duration="700" data-aos-delay="100"></div>
       </Wrapper>
    );
 };

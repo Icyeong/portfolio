@@ -7,7 +7,9 @@ import Shark from '../aniball/Shark';
 const Collection = () => {
    return (
       <Wrapper>
-         <p>Aniball Collection</p>
+         <p data-aos="fade-in" data-aos-duration="1000">
+            Aniball Collection
+         </p>
          <ul className="container">
             <li>
                <div>

@@ -6,7 +6,7 @@ import { useState } from 'react';
 const InfoTab = () => {
    const [activeBtn, setActiveBtn] = useState('stack');
    return (
-      <Wrapper>
+      <Wrapper data-aos="fade-left" data-aos-duration="700">
          <BtnWrapper>
             <button onClick={() => setActiveBtn('stack')} className={activeBtn === 'stack' ? 'active' : null}>
                Stack
@@ -129,6 +129,13 @@ const TabContainer = styled.ul`
          .item .imgBox {
             width: 5.8rem;
             height: 5.8rem;
+         }
+      }
+      @media screen and (max-width: 1550px) {
+         grid-template-columns: repeat(4, 1fr) !important;
+         .item .imgBox {
+            width: 5.5rem;
+            height: 5.5rem;
          }
       }
       @media screen and (max-width: 1440px) {

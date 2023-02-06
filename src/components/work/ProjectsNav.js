@@ -8,7 +8,7 @@ const ProjectNav = () => {
    return (
       <Wrapper>
          <div className="temp"></div>
-         <nav>
+         <nav data-aos="fade-in" data-aos-duration="1000">
             <div className="inner-container">
                {project_data.map((data, idx) => (
                   <CreateNav data={data} key={idx} />
@@ -25,11 +25,12 @@ const Wrapper = styled.div`
    display: flex;
    flex-direction: column;
    overflow-y: hidden;
+   justify-content: center;
    .temp {
-      height: 200px;
+      height: 50px;
    }
    nav {
-      height: calc(100vh - 200px);
+      max-height: calc(100vh - 50px);
       padding: 20px 20px 70px;
    }
    .inner-container {
