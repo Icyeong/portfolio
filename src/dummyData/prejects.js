@@ -12,19 +12,23 @@ export const projects_dummyData = [
    {
       id: 1,
       title: 'MOMO',
-      subTitle: '팀 프로젝트 (6인 / 4주)',
+      subTitle: '팀 프로젝트 (6인 / 2022.12 ~ 진행중)',
       navTitle: 'MOMO (팀 프로젝트)',
       imgUrl: momo,
       brief: '모두 모임의 약자로 다양한 모임, 스터디, 멘토링 등을 주최하고, 관심 모임 참여를 할 수 있는 예약 웹어플리케이션',
-      content: ['마이페이지/모임 목록 페이지/적립금 페이지/모달 구현', 'TossPayments API를 이용한 카드 결제 기능 구현'],
+      content: [
+         'UI 디자인',
+         '마이페이지/모임 목록 페이지/적립금 페이지/모달 구현',
+         'TossPayments API를 이용한 카드 결제 기능 구현'
+      ],
       stacks: ['Next.js', 'Recoil', 'JavaScript', 'Styled-components', 'Bootstrap5'],
-      githubLink: 'https://github.com/project-momo/momo-fe'
-      // deployLink: 'https://www.momo-deploy.site'
+      githubLink: 'https://github.com/project-momo/momo-fe',
+      deployLink: 'https://www.momo-deploy.site'
    },
    {
       id: 2,
       title: 'QR오더',
-      subTitle: '코드스테이츠 메인 프로젝트 (7인 / 4주)',
+      subTitle: '코드스테이츠 메인 프로젝트 (7인 / 2022.11 ~ 2022.12 4주)',
       navTitle: 'QR오더 (팀 프로젝트)',
       imgUrl: order,
       brief: '온라인 웹 메뉴판 제작 기능을 제공, QR 코드의 주문이 가능한 비대면 주문 시스템',
@@ -40,15 +44,11 @@ export const projects_dummyData = [
    {
       id: 3,
       title: '스택오버플로우 클론',
-      subTitle: '코드스테이츠 프리 프로젝트 (7인 / 2주)',
+      subTitle: '코드스테이츠 프리 프로젝트 (7인 / 2022.10 ~ 2022.11 2주)',
       navTitle: '스택오버플로우 클론 (팀 프로젝트)',
       imgUrl: stack,
       brief: '기존 스택오버플로우 웹사이트의 UI 및 기능을 클론하여 제작',
-      content: [
-         '로그인, 회원가입, 가입 성공, 계정 복구 페이지, 마이페이지 구현',
-         'Auth 로그인, 회원가입 기능 구현',
-         'JWT 이용한 Access token / Refresh token 기반 인증 구현'
-      ],
+      content: ['로그인, 회원가입, 가입 성공, 계정 복구 페이지, 마이페이지 구현', 'Auth 로그인, 회원가입 기능 구현'],
       stacks: ['React', 'Redux', 'JavaScript', 'Styled-components'],
       githubLink: 'https://github.com/Icyeong/seb40_pre_033'
    },
