@@ -32,7 +32,7 @@ const Introduction = () => {
                <p>읽어주셔서 감사합니다.</p>
                <ul className="link-items">
                   <li>
-                     <a href="https://github.com/Icyeong?tab=repositories" target="_blank" rel="noreferrer">
+                     <a href="https://github.com/Icyeong" target="_blank" rel="noreferrer">
                         <img src={Github} alt="github" />
                      </a>
                   </li>
