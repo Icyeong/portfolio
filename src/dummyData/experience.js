@@ -1,5 +1,11 @@
 export const experience_dummyData = [
    {
+      period: '2023.03 - 재직중',
+      title: '청오엔에프 (도미노피자)',
+      smallTitle: '플랫폼 개선팀 | 프론트엔드',
+      detail: ['- 수정필요']
+   },
+   {
       period: '2022.06 - 2022.12',
       title: '코드스테이츠 (Code States)',
       smallTitle: '프론트엔드 부트캠프 (40기 수료)',
@@ -15,7 +21,7 @@ export const experience_dummyData = [
    {
       period: '2021.09 - 2022.05',
       title: '게임인스',
-      smallTitle: '웹퍼블리셔로 재직',
+      smallTitle: '웹퍼블리셔',
       detail: [
          '- Figma를 이용한 웹디자인 및 기획 설계',
          '- 커뮤니티 사이트 퍼블리싱 및 기능 구현',

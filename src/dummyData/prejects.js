@@ -11,8 +11,24 @@ import miero from '../assets/image/work/miero.png';
 export const projects_dummyData = [
    {
       id: 1,
+      title: '인스타그램 클론',
+      subTitle: '개인 프로젝트 (2024.05 ~ 2024.08)',
+      navTitle: '인스타그램 클론 (개인 프로젝트)',
+      imgUrl: momo,
+      brief: '인스타그램의 UI 및 기능을 클론하여 제작',
+      content: [
+         'UI 디자인',
+         '마이페이지/모임 목록 페이지/적립금 페이지/모달 구현',
+         'TossPayments API를 이용한 카드 결제 기능 구현'
+      ],
+      stacks: ['Next.js', 'Zustand', 'TypeScript', 'React-Query', 'Styled-components'],
+      githubLink: 'https://github.com/Icyeong/Project'
+      // deployLink: 'https://www.momo-deploy.site'
+   },
+   {
+      id: 2,
       title: 'MOMO',
-      subTitle: '팀 프로젝트 (6인 / 2022.12 ~ 진행중)',
+      subTitle: '팀 프로젝트 (6인 / 2022.12 ~ 2023.02)',
       navTitle: 'MOMO (팀 프로젝트)',
       imgUrl: momo,
       brief: '모두 모임의 약자로 다양한 모임, 스터디, 멘토링 등을 주최하고, 관심 모임 참여를 할 수 있는 예약 웹어플리케이션',
@@ -26,7 +42,7 @@ export const projects_dummyData = [
       deployLink: 'https://www.momo-deploy.site'
    },
    {
-      id: 2,
+      id: 3,
       title: 'QR오더',
       subTitle: '코드스테이츠 메인 프로젝트 (7인 / 2022.11 ~ 2022.12 4주)',
       navTitle: 'QR오더 (팀 프로젝트)',
@@ -42,7 +58,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/REQZPO8ktRt9aK2m0T9e8l/Main-project-(QR-%EC%98%A4%EB%8D%94)?node-id=0%3A1&t=lTiiXVyfW3DzPM2i-1'
    },
    {
-      id: 3,
+      id: 4,
       title: '스택오버플로우 클론',
       subTitle: '코드스테이츠 프리 프로젝트 (7인 / 2022.10 ~ 2022.11 2주)',
       navTitle: '스택오버플로우 클론 (팀 프로젝트)',
@@ -53,7 +69,7 @@ export const projects_dummyData = [
       githubLink: 'https://github.com/Icyeong/seb40_pre_033'
    },
    {
-      id: 4,
+      id: 5,
       title: 'Todo App',
       subTitle: '개인 프로젝트 (2023.01 / 3일)',
       navTitle: 'Todo App (개인 프로젝트)',
@@ -64,7 +80,7 @@ export const projects_dummyData = [
       githubLink: 'https://github.com/Icyeong/todo_app'
    },
    {
-      id: 5,
+      id: 6,
       title: 'TimTam',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: 'TimTam (퍼블리싱)',
@@ -77,7 +93,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/6PldIOVblbltzB3aYuCurJ/TimTam?node-id=0%3A1&t=KmAwucMdUSFd6Dbn-1'
    },
    {
-      id: 6,
+      id: 7,
       title: '롯데호텔',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: '롯데호텔 (퍼블리싱)',
@@ -90,7 +106,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/NCMRgavA2eJMgwKQjnsLFf/%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94?node-id=0%3A1&t=if6CuQugNgyU4q81-1'
    },
    {
-      id: 7,
+      id: 8,
       title: '쿵푸팬더',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: '쿵푸팬더 (퍼블리싱)',
@@ -104,7 +120,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/OshAhvvJMbITZSQrtdJ5K5/%EC%BF%B9%ED%91%B8%ED%8C%AC%EB%8D%94?node-id=0%3A1&t=DgMakxF7hJOPXmdw-1'
    },
    {
-      id: 8,
+      id: 9,
       title: 'Ms.fortune',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: 'Ms.fortune (퍼블리싱)',
@@ -117,7 +133,7 @@ export const projects_dummyData = [
       deployLink: 'https://icyeong.github.io/Ms.fortune'
    },
    {
-      id: 9,
+      id: 10,
       title: '미에로화이바 클론',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: '미에로화이바 클론 (퍼블리싱)',

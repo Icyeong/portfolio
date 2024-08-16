@@ -16,9 +16,11 @@ import figma from '../assets/image/stack/figma.png';
 export const stack_dummyData = [
    { stack: 'React', src: { react }, srcName: 'react' },
    { stack: 'Next.js', src: { next }, srcName: 'next' },
-   { stack: 'Redux', src: { redux }, srcName: 'redux' },
+   { stack: 'Zustand', src: { recoil }, srcName: 'zustand' },
    { stack: 'Recoil', src: { recoil }, srcName: 'recoil' },
+   { stack: 'Redux', src: { redux }, srcName: 'redux' },
    { stack: 'Styled-components', src: { styled }, srcName: 'styled' },
+   { stack: 'TypeScript', src: { javascript }, srcName: 'typescript' },
    { stack: 'HTML5', src: { html }, srcName: 'html' },
    { stack: 'CSS3', src: { css }, srcName: 'css' },
    { stack: 'JavaScript', src: { javascript }, srcName: 'javascript' },
@@ -27,5 +29,6 @@ export const stack_dummyData = [
    { stack: 'Bootstrap5', src: { bootstrap }, srcName: 'bootstrap' },
    { stack: 'Git', src: { git }, srcName: 'git' },
    { stack: 'Github', src: { github }, srcName: 'github' },
+   { stack: 'Gitlab', src: { github }, srcName: 'gitlab' },
    { stack: 'Figma', src: { figma }, srcName: 'figma' }
 ];
