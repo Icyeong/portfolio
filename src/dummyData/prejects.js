@@ -1,3 +1,4 @@
+import insta from '../assets/image/work/insta.png';
 import momo from '../assets/image/work/momo.png';
 import order from '../assets/image/work/QR_order.png';
 import stack from '../assets/image/work/stack.png';
@@ -14,16 +15,19 @@ export const projects_dummyData = [
       title: '인스타그램 클론',
       subTitle: '개인 프로젝트 (2024.05 ~ 2024.08)',
       navTitle: '인스타그램 클론 (개인 프로젝트)',
-      imgUrl: momo,
-      brief: '인스타그램의 UI 및 기능을 클론하여 제작',
+      imgUrl: insta,
+      brief: '현업에서 널리 사용되는 기술로 인스타그램의 UI 및 기능을 클론하여 제작',
       content: [
-         'UI 디자인',
-         '마이페이지/모임 목록 페이지/적립금 페이지/모달 구현',
-         'TossPayments API를 이용한 카드 결제 기능 구현'
+         'Firebase 기반 사용자 인증 통합',
+         '데이터 관리 및 렌더링 성능 최적화',
+         '댓글 태그 및 자동완성 기능 구현',
+         '모달 관리 및 중첩 모달 처리 기능 개선',
+         '백엔드리스 환경에서의 피드와 댓글 관리 API 구현',
+         '포토,피드 리스트 스켈레톤 UI 및 빈 페이지 처리'
       ],
       stacks: ['Next.js', 'Zustand', 'TypeScript', 'React-Query', 'Styled-components'],
-      githubLink: 'https://github.com/Icyeong/Project'
-      // deployLink: 'https://www.momo-deploy.site'
+      githubLink: 'https://github.com/Icyeong/Project',
+      deployLink: 'https://instagram-five-theta.vercel.app'
    },
    {
       id: 2,
@@ -35,11 +39,11 @@ export const projects_dummyData = [
       content: [
          'UI 디자인',
          '마이페이지/모임 목록 페이지/적립금 페이지/모달 구현',
-         'TossPayments API를 이용한 카드 결제 기능 구현'
+         '복잡한 조건부 렌더링 및 Props Drilling 문제 해결',
+         'TossPayments API 카드 결제 연동 및 결제 성공 처리'
       ],
       stacks: ['Next.js', 'Recoil', 'JavaScript', 'Styled-components', 'Bootstrap5'],
-      githubLink: 'https://github.com/project-momo/momo-fe',
-      deployLink: 'https://www.momo-deploy.site'
+      githubLink: 'https://github.com/project-momo/momo-fe'
    },
    {
       id: 3,
@@ -50,8 +54,8 @@ export const projects_dummyData = [
       brief: '온라인 웹 메뉴판 제작 기능을 제공, QR 코드의 주문이 가능한 비대면 주문 시스템',
       content: [
          '프로젝트 기획 및 와이어프레임 설계',
-         '랜딩 페이지, 사용자 주문 메뉴판 페이지 구현',
-         '메뉴판 페이지 CRUD 기능 구현'
+         '사용자 주문 메뉴판 페이지 구현 및 동적 라우팅',
+         '랜딩 페이지 및 사용자 인터페이스 최적화'
       ],
       stacks: ['React', 'Redux', 'JavaScript', 'Styled-components'],
       githubLink: 'https://github.com/codestates-seb/seb40_main_021',
@@ -64,7 +68,7 @@ export const projects_dummyData = [
       navTitle: '스택오버플로우 클론 (팀 프로젝트)',
       imgUrl: stack,
       brief: '기존 스택오버플로우 웹사이트의 UI 및 기능을 클론하여 제작',
-      content: ['로그인, 회원가입, 가입 성공, 계정 복구 페이지, 마이페이지 구현', 'Auth 로그인, 회원가입 기능 구현'],
+      content: ['로그인, 회원가입, 가입 성공, 계정 복구 페이지, 마이페이지 구현', 'API 호출 및 인증 관리'],
       stacks: ['React', 'Redux', 'JavaScript', 'Styled-components'],
       githubLink: 'https://github.com/Icyeong/seb40_pre_033'
    },
@@ -74,8 +78,8 @@ export const projects_dummyData = [
       subTitle: '개인 프로젝트 (2023.01 / 3일)',
       navTitle: 'Todo App (개인 프로젝트)',
       imgUrl: todo,
-      brief: 'wanted 에서 제공하는 server API를 이용해 todolist를 구현',
-      content: ['UI 구현 및 제작', '로그인, 회원가입 기능 구현', 'todolist CRUD 구현'],
+      brief: '원티드에서 제공하는 server API를 이용해 todolist를 구현',
+      content: ['디자인 및 제작', '로그인, 회원가입 기능 구현', 'Todolist CRUD 구현'],
       stacks: ['React', 'Recoil', 'JavaScript', 'Styled-components'],
       githubLink: 'https://github.com/Icyeong/todo_app'
    },
