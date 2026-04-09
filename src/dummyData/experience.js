@@ -1,9 +1,15 @@
 export const experience_dummyData = [
    {
-      period: '2023.03 - 재직중',
+      period: '2023.03 - 2026.03',
       title: '청오엔에프 (도미노피자)',
       smallTitle: '플랫폼 개선팀 | 프론트엔드',
-      detail: ['- 수정필요']
+      detail: [
+         '- Next.js, TypeScript 기반 신규 플랫폼 서비스 개발 및 핵심 기능 구현',
+         '- 로그인/회원가입/본인인증 등 사용자 인증 전반 플로우 설계 및 구현',
+         '- WebSocket(Stomp) 기반 실시간 주문 상태 및 알림 UI 동기화 구조 설계',
+         '- TanStack Query를 활용한 서버 상태 관리 및 데이터 캐싱 최적화',
+         '- Lighthouse 성능 최적화를 통해 웹 성능 지표 개선 (60 → 90 이상)'
+      ]
    },
    {
       period: '2022.06 - 2022.12',
@@ -29,7 +35,7 @@ export const experience_dummyData = [
       ]
    },
    {
-      period: '2021.08 - 재학중',
+      period: '2021.08 - 2025.08',
       title: '서울디지털대학교',
       detail: ['- 소프트웨어공학과']
    },

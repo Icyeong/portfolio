@@ -1,5 +1,7 @@
 import react from '../assets/image/stack/react.png';
 import next from '../assets/image/stack/next.png';
+import vue from '../assets/image/stack/vue.png';
+import nuxt from '../assets/image/stack/nuxt.png';
 import javascript from '../assets/image/stack/javascript.png';
 import typescript from '../assets/image/stack/typescript.png';
 import es6 from '../assets/image/stack/es6.png';
@@ -20,6 +22,8 @@ import figma from '../assets/image/stack/figma.png';
 export const stack_dummyData = [
    { stack: 'React', src: { react }, srcName: 'react' },
    { stack: 'Next.js', src: { next }, srcName: 'next' },
+   { stack: 'Vue3', src: { vue }, srcName: 'vue' },
+   { stack: 'Nuxt.js', src: { nuxt }, srcName: 'nuxt' },
    { stack: 'Zustand', src: { zustand }, srcName: 'zustand' },
    { stack: 'Recoil', src: { recoil }, srcName: 'recoil' },
    { stack: 'Redux', src: { redux }, srcName: 'redux' },
