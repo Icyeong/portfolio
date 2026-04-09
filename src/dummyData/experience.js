@@ -4,11 +4,17 @@ export const experience_dummyData = [
       title: '청오엔에프 (도미노피자)',
       smallTitle: '플랫폼 개선팀 | 프론트엔드',
       detail: [
-         '- Next.js, TypeScript 기반 신규 플랫폼 서비스 개발 및 핵심 기능 구현',
-         '- 로그인/회원가입/본인인증 등 사용자 인증 전반 플로우 설계 및 구현',
-         '- WebSocket(Stomp) 기반 실시간 주문 상태 및 알림 UI 동기화 구조 설계',
-         '- TanStack Query를 활용한 서버 상태 관리 및 데이터 캐싱 최적화',
-         '- Lighthouse 성능 최적화를 통해 웹 성능 지표 개선 (60 → 90 이상)'
+         '- 정적 페이지 생성 및 SEO 최적화',
+         '- SSR과 CSR에서의 토큰 관리 및 인증 강화',
+         '- 이니시스 결제 시스템 통합 및 보안 문제 해결',
+         '- 웹소켓을 통한 실시간 주문 상태 업데이트 및 보안 강화',
+         '- 장바구니 관리 및 체크아웃 기능 최적화',
+         '- 웹 성능 최적화 및 Lighthouse 점수 개선'
+         //  '- Next.js, TypeScript 기반 신규 플랫폼 서비스 개발 및 핵심 기능 구현',
+         // '- 로그인/회원가입/본인인증 등 사용자 인증 전반 플로우 설계 및 구현',
+         // '- WebSocket(Stomp) 기반 실시간 주문 상태 및 알림 UI 동기화 구조 설계',
+         // '- TanStack Query를 활용한 서버 상태 관리 및 데이터 캐싱 최적화',
+         // '- Lighthouse 성능 최적화를 통해 웹 성능 지표 개선 (60 → 90 이상)'
       ]
    },
    {
@@ -29,9 +35,9 @@ export const experience_dummyData = [
       title: '게임인스',
       smallTitle: '웹퍼블리셔',
       detail: [
-         '- Figma를 이용한 웹디자인 및 기획 설계',
-         '- 커뮤니티 사이트 퍼블리싱 및 기능 구현',
-         '- 회사 내부 웹사이트 유지 보수'
+         '- Figma를 활용한 UX/UI 설계 및 반응형 퍼블리싱',
+         '- 실시간 문의 응대 기능 개선',
+         '- Internet Explorer 호환성 유지 및 문제 해결'
       ]
    },
    {
