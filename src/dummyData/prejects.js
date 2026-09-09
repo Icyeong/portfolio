@@ -1,3 +1,4 @@
+import lecturePlayer from '../assets/image/work/lecturPlayer.png';
 import insta from '../assets/image/work/insta.png';
 import momo from '../assets/image/work/momo.png';
 import order from '../assets/image/work/QR_order.png';
@@ -12,6 +13,23 @@ import miero from '../assets/image/work/miero.png';
 export const projects_dummyData = [
    {
       id: 1,
+      title: 'HLS 강의 Player',
+      subTitle: '개인 프로젝트 (2026.09)',
+      navTitle: 'HLS 강의 Player (개인 프로젝트)',
+      imgUrl: lecturePlayer,
+      brief: 'HLS 스트리밍 환경의 온라인 강의 서비스를 가정해 구현한 React 기반 강의 플레이어',
+      content: [
+         'hls.js 기반 HLS(.m3u8) 스트리밍 재생 및 강의 전환 시 인스턴스 lifecycle 관리',
+         'Loading/Buffering/Error 상태 처리 및 스트리밍 오류 발생 시 Retry 기능 구현',
+         'LocalStorage 기반 강의별 이어보기와 시청 기록 저장 및 진도율 동기화',
+         'HTML5 Video API를 활용한 0.75x~2.0x 배속 조절 및 재생 정보 UI 구현',
+         '16:9 영상 비율을 유지하는 모바일/태블릿/데스크톱 반응형 UI 구현'
+      ],
+      stacks: ['React', 'TypeScript', 'hls.js', 'Tailwind CSS', 'Vite'],
+      githubLink: 'https://github.com/Icyeong/HLS-lecture-player'
+   },
+   {
+      id: 2,
       title: '인스타그램 클론',
       subTitle: '개인 프로젝트 (2024.05 ~ 2024.08)',
       navTitle: '인스타그램 클론 (개인 프로젝트)',
@@ -30,7 +48,7 @@ export const projects_dummyData = [
       deployLink: 'https://instagram-five-theta.vercel.app'
    },
    {
-      id: 2,
+      id: 3,
       title: 'MOMO',
       subTitle: '팀 프로젝트 (6인 / 2022.12 ~ 2023.02)',
       navTitle: 'MOMO (팀 프로젝트)',
@@ -46,7 +64,7 @@ export const projects_dummyData = [
       githubLink: 'https://github.com/project-momo/momo-fe'
    },
    {
-      id: 3,
+      id: 4,
       title: 'QR오더',
       subTitle: '코드스테이츠 메인 프로젝트 (7인 / 2022.11 ~ 2022.12 4주)',
       navTitle: 'QR오더 (팀 프로젝트)',
@@ -62,7 +80,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/REQZPO8ktRt9aK2m0T9e8l/Main-project-(QR-%EC%98%A4%EB%8D%94)?node-id=0%3A1&t=lTiiXVyfW3DzPM2i-1'
    },
    {
-      id: 4,
+      id: 5,
       title: '스택오버플로우 클론',
       subTitle: '코드스테이츠 프리 프로젝트 (7인 / 2022.10 ~ 2022.11 2주)',
       navTitle: '스택오버플로우 클론 (팀 프로젝트)',
@@ -73,7 +91,7 @@ export const projects_dummyData = [
       githubLink: 'https://github.com/Icyeong/seb40_pre_033'
    },
    {
-      id: 5,
+      id: 6,
       title: 'Todo App',
       subTitle: '개인 프로젝트 (2023.01 / 3일)',
       navTitle: 'Todo App (개인 프로젝트)',
@@ -84,7 +102,7 @@ export const projects_dummyData = [
       githubLink: 'https://github.com/Icyeong/todo_app'
    },
    {
-      id: 6,
+      id: 7,
       title: 'TimTam',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: 'TimTam (퍼블리싱)',
@@ -97,7 +115,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/6PldIOVblbltzB3aYuCurJ/TimTam?node-id=0%3A1&t=KmAwucMdUSFd6Dbn-1'
    },
    {
-      id: 7,
+      id: 8,
       title: '롯데호텔',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: '롯데호텔 (퍼블리싱)',
@@ -110,7 +128,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/NCMRgavA2eJMgwKQjnsLFf/%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94?node-id=0%3A1&t=if6CuQugNgyU4q81-1'
    },
    {
-      id: 8,
+      id: 9,
       title: '쿵푸팬더',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: '쿵푸팬더 (퍼블리싱)',
@@ -124,7 +142,7 @@ export const projects_dummyData = [
       figma: 'https://www.figma.com/file/OshAhvvJMbITZSQrtdJ5K5/%EC%BF%B9%ED%91%B8%ED%8C%AC%EB%8D%94?node-id=0%3A1&t=DgMakxF7hJOPXmdw-1'
    },
    {
-      id: 9,
+      id: 10,
       title: 'Ms.fortune',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: 'Ms.fortune (퍼블리싱)',
@@ -137,7 +155,7 @@ export const projects_dummyData = [
       deployLink: 'https://icyeong.github.io/Ms.fortune'
    },
    {
-      id: 10,
+      id: 11,
       title: '미에로화이바 클론',
       subTitle: '개인 프로젝트 (2021년도 제작)',
       navTitle: '미에로화이바 클론 (퍼블리싱)',
