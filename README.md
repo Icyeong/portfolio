@@ -2,5 +2,5 @@
 
 배포 링크
 
-https://portfolio-gaoi-a0z17qfxk-icyeongs-projects.vercel.app/
+[https://portfolio-gaoi-a0z17qfxk-icyeongs-projects.vercel.app/](https://portfolio-gaoi-git-main-icyeongs-projects.vercel.app/)
 
