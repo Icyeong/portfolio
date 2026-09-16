@@ -34,7 +34,7 @@ export const projects_dummyData = [
       subTitle: '개인 프로젝트 (2024.05 ~ 2024.08)',
       navTitle: '인스타그램 클론 (개인 프로젝트)',
       imgUrl: insta,
-      brief: '현업에서 널리 사용되는 기술로 인스타그램의 UI 및 기능을 클론하여 제작',
+      brief: '인스타그램의 핵심 사용자 경험을 구현하며 인증, 피드 렌더링 및 데이터 처리 구조를 직접 구성한 SNS 클론 프로젝트',
       content: [
          'Firebase Authentication 기반 이메일/OAuth 인증 구현',
          'useInfiniteQuery 기반 무한 스크롤 및 react-virtual·ResizeObserver 기반 피드 가상화 렌더링 구현',
