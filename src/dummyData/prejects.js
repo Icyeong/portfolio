@@ -19,9 +19,9 @@ export const projects_dummyData = [
       imgUrl: lecturePlayer,
       brief: 'HLS 스트리밍 환경의 온라인 강의 서비스를 가정해 구현한 React 기반 강의 플레이어',
       content: [
-         'hls.js 기반 HLS(.m3u8) 스트리밍 재생 및 강의 전환 시 인스턴스 lifecycle 관리',
+         'Native HLS/hls.js 재생 환경을 분기하고 강의 전환 시 HLS 인스턴스 lifecycle 관리',
          'Loading/Buffering/Error 상태 처리 및 스트리밍 오류 발생 시 Retry 기능 구현',
-         'LocalStorage 기반 강의별 이어보기와 시청 기록 저장 및 진도율 동기화',
+         'localStorage 기반 강의별 이어보기·시청 기록 및 진도율 저장',
          'HTML5 Video API를 활용한 0.75x~2.0x 배속 조절 및 재생 정보 UI 구현',
          '16:9 영상 비율을 유지하는 모바일/태블릿/데스크톱 반응형 UI 구현'
       ],
@@ -36,14 +36,13 @@ export const projects_dummyData = [
       imgUrl: insta,
       brief: '현업에서 널리 사용되는 기술로 인스타그램의 UI 및 기능을 클론하여 제작',
       content: [
-         'Firebase 기반 사용자 인증 통합',
-         '데이터 관리 및 렌더링 성능 최적화',
-         '댓글 태그 및 자동완성 기능 구현',
-         '모달 관리 및 중첩 모달 처리 기능 개선',
-         '백엔드리스 환경에서의 피드와 댓글 관리 API 구현',
-         '포토,피드 리스트 스켈레톤 UI 및 빈 페이지 처리'
+         'Firebase Authentication 기반 이메일/OAuth 인증 구현',
+         'useInfiniteQuery 기반 무한 스크롤 및 react-virtual·ResizeObserver 기반 피드 가상화 렌더링 구현',
+         '댓글 스레드 및 사용자 태그·자동완성 인터랙션 구현',
+         '검색·다크모드·스켈레톤·빈 상태 UI 구현',
+         'Next.js pages/api 기반 서버리스 API 구성 및 Vercel 배포'
       ],
-      stacks: ['Next.js', 'Zustand', 'TypeScript', 'React-Query', 'Styled-components'],
+      stacks: ['Next.js', 'TypeScript', 'TanStack Query', 'Zustand', 'react-virtual', 'Styled-components'],
       githubLink: 'https://github.com/Icyeong/Project',
       deployLink: 'https://instagram-five-theta.vercel.app'
    },
@@ -57,7 +56,6 @@ export const projects_dummyData = [
       content: [
          'UI 디자인',
          '마이페이지/모임 목록 페이지/적립금 페이지/모달 구현',
-         '복잡한 조건부 렌더링 및 Props Drilling 문제 해결',
          'TossPayments API 카드 결제 연동 및 결제 성공 처리'
       ],
       stacks: ['Next.js', 'Recoil', 'JavaScript', 'Styled-components', 'Bootstrap5'],
