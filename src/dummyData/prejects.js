@@ -43,7 +43,7 @@ export const projects_dummyData = [
          'Next.js pages/api 기반 서버리스 API 구성 및 Vercel 배포'
       ],
       stacks: ['Next.js', 'TypeScript', 'TanStack Query', 'Zustand', 'react-virtual', 'Styled-components'],
-      githubLink: 'https://github.com/Icyeong/Project',
+      githubLink: 'https://github.com/Icyeong/Project'
    },
    {
       id: 3,
