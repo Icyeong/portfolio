@@ -44,7 +44,6 @@ export const projects_dummyData = [
       ],
       stacks: ['Next.js', 'TypeScript', 'TanStack Query', 'Zustand', 'react-virtual', 'Styled-components'],
       githubLink: 'https://github.com/Icyeong/Project',
-      deployLink: 'https://instagram-five-theta.vercel.app'
    },
    {
       id: 3,
